@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav #left {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+#nav #left svg {
+    border-radius: 50%;
+    color: red;
+    transition: all ease 0.5s;
+}
+
+#nav #left svg:hover {
+    box-shadow: 0px 0px 10px rgb(115, 114, 114);
+}
+
+#nav #left h4 {
+    padding: 10px;
+    border-radius: 40px;
+    transition: all ease 0.5s;
+}
+
+#nav #left h4:hover {
+    color: white;
+    background-color: black;
+}
+
+#nav #middle {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    background-color: rgb(236, 236, 236);
+    padding: 12px;
+    border-radius: 25px;
+}
+
+#nav #middle:focus-within {
+    border: 3px solid rgb(0, 162, 255);
+}
+
+#nav #middle:focus-within .bi.bi-search {
+    display: none;
+}
+
+#nav #middle:focus-within .bi.bi-x-circle {
+    display: block;
+
+}
+
+.bi.bi-x-circle {
+    display: none;
+
+}
+
+#nav #middle input {
+    width: 100%;
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
+
+}
+
+#nav #middle input:focus-visible {
+    outline: none;
+}
+
+#nav #right {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#nav #right svg{
+    width: 20%;
+    height: 10%;
+    padding: 3%;
+    margin: 7%;
+    color: grey;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: all ease 0.5s;
+}
+#nav #right svg:hover{
+    background-color:rgba(104, 103, 103, 0.35);  
+}
+#itemCard{
+    width: 200px;
+    height: 350px;
+    background-color: red;
+}
