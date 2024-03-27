@@ -98,8 +98,17 @@ body {
 #nav #right svg:hover{
     background-color:rgba(104, 103, 103, 0.35);  
 }
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 #itemCard{
-    width: 200px;
-    height: 350px;
+    flex: 1 1 200px;
+    max-width:  200px;
+    max-height: 350px;
     background-color: red;
+    /* margin: 10px; */
 }
