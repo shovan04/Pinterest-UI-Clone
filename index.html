@@ -75,13 +75,14 @@
     import { getPhotosPath, ItemCard } from "./script.js";
 
     const Select = x => document.querySelector(x)
-    const DIRPATH = `${window.location.protocol}//${window.location.host}/images/`
+    const DIRPATH = `${window.location.href.replace(/\/[^\/]*$/, "/")}images/`
 
     const allItems = Select('.allItems')
 
     // console.log(allItems)
     getPhotosPath(DIRPATH)
         .then((datas) => {
+            console.log(typeof datas)
             datas.reverse().forEach((data) => {
                 // console.log(DIRPATH + data)
                 allItems.innerHTML += ItemCard({
@@ -91,7 +92,7 @@
             });
         })
         .catch((error) => {
-            console.error(error);
+            console.log(error);
         });
 
 </script>

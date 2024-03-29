@@ -7,6 +7,7 @@ async function getPhotosPath(DIRPATH) {
         "Content-Type": "application/json",
       },
     });
+    console.log(response)
     const data = await response.json();
     return data;
   } catch (error) {
